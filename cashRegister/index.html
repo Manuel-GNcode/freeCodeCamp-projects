@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cashRegister">
+        <span class="cashRegister__price">$ ---</span>
+        <div class="cashRegister__top">
+            <div id="change-due"></div>
+            <input id="cash" placeholder=" Cash">
+        </div>
+
+        <div class="cashRegister__middle">
+            <div class="btns">
+                <span class="button-number">1</span>
+                <span class="button-number">2</span>
+                <span class="button-number">3</span>
+                <span class="button-number">4</span>
+                <span class="button-number">5</span>
+                <span class="button-number">6</span>
+                <span class="button-number">7</span>
+                <span class="button-number">8</span>
+                <span class="button-number">9</span>
+                <span class="button-number">0</span>
+            </div>
+            <div class="actionsBtns">
+                <button id="comma-btn">.</button>
+                <button id="drawer-btn">DRAWER</button>
+                <button id="purchase-btn">PURCHASE</button>
+            </div>
+        </div>
+
+        <div class="cashRegister__inside">
+            <span class="change">
+                <h3>PENNY:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>NICKEL:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>DIME:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>QUARTER:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>ONE:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>FIVE:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>TEN:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>TWENTY:</h3>
+                <p></p>
+            </span>
+            <span class="change">
+                <h3>ONE HUNDRED:</h3>
+                <p></p>
+            </span>
+            <span class="amuleto">Amuleto</span>
+        </div>
+
+        <div class="cashRegister__bottom">
+            <span class="cashRegisterBtn"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(-135deg,
+    #ee930a, #53716e,  #161c1f 
+    );
+}
+#header {
+    margin: 20px auto 0;
+    color: #161c1f ;
+    max-width: 500px;
+}
+#title {
+    margin: 20px 0;
+}
+
+.phone {
+    width:280px;
+    height:480px;
+    background-color: #161c1f;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 25px 10px;
+    position: relative;
+}
+#logo {
+    font-size: 1rem;
+    color: aliceblue;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#logo b {
+    color:#ee930a;
+}
+.phoneUi {
+    background-color: #53716e;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+#results-div {
+    background-color: #ee930a;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+#user-input {
+    width: 80%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px 3px;
+    outline: none;
+    border: none;
+    background: #ee930a2a;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.delete {
+    background: #ee930a2a;
+    font-size: 1.5rem;
+    padding: 10px 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.numberCtr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.number {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    color: #53716e;
+    font-weight: bold;
+    box-shadow: -2px 2px 5px #161c1f;
+}
+.number:hover {
+    transform: scale(1.2);
+}
+.number:active {
+    background-color: #ee930a;
+    color:#fff;
+}
+#check-btn, #clear-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: -2px 2px 5px #161c1f;
+}
+.phoneUi>button:hover {
+    transform: scale(1.1);
+}
+#check-btn {
+    background-color: rgb(38, 160, 38);
+    margin-right: 10px;
+}
+#clear-btn {
+    background-color: rgb(199, 42, 42);
+}

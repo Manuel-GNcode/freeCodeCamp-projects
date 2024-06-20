@@ -1,0 +1,76 @@
+:root {
+    --details: #F2613F;
+    --base: #0C0C0C;
+    --letter: #EEE4B1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--base);
+    color: var(--letter);
+    text-align: center;
+    padding: 0 20px;
+}   
+header {
+    padding: 40px;
+}
+.logo {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.logo b {
+    color: var(--details);
+}
+
+.ctrForm {
+    background-color: var(--letter);
+    color: var(--base);
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.description {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#text-input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--base);
+    background-color: transparent;
+    background: linear-gradient(to top,
+    #0c0c0c3a,
+    var(--letter)
+    );
+    font-size: 1.5rem;
+    vertical-align: bottom;
+}
+#check-btn {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--details);
+    color: var(--base);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 1px 2px var(--base);
+}
+#result p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.ctrHit {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}

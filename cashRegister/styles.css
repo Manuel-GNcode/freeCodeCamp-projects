@@ -1,0 +1,190 @@
+:root {
+    --color-1: #EF4F4F;
+    --color-2: #EE9595;
+    --color-3: #FFCDA3;
+    --color-4: #74C7B8;
+    --color-5: #0C0C0C;
+    --color-6: #f2e9e4;
+    --width: 400px;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #60a598;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cashRegister {
+    width: var(--width);
+    margin: 150px auto 0;
+    text-align: center;
+    position: relative;
+}
+
+.cashRegister__price {
+    position: absolute;
+    background-color: var(--color-2);
+    padding: 5px;
+    border-radius: 10px;
+    border: 6px solid var(--color-5);
+    top: -60px;
+    right: 50px;
+    min-width: calc(var(--width)/3);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.cashRegister__price::before {
+    content: "";
+    width: 6px;
+    height: 20px;
+    background-color: var(--color-5);
+    position: absolute;
+    bottom: -20px;
+    left: 60px;
+}
+
+.cashRegister__top {
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    padding: 20px;
+    border: 6px solid var(--color-5);
+    border-radius: 20px 20px 0 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#change-due {
+    position: absolute;
+    background-color: var(--color-6);
+    width: 40%;
+    height: 0px;
+    bottom: 20px;
+    left: 20px;
+    border: 6px solid var(--color-5);
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+#cash {
+    border-radius: 5px;
+    border: 6px solid var(--color-5);
+    outline: none;
+    font-size: 1.5rem;
+    width: 150px;
+    padding: 2px;
+}
+
+.cashRegister__middle {
+    background-color: var(--color-5);
+    height: 150px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.btns span {
+    background-color: var(--color-6);
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+.actionsBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.actionsBtns button {
+    cursor: pointer;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: .8rem;
+    height: 30px;
+    font-weight: bold;
+}
+#purchase-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    height: auto;
+    background-color: var(--color-4);
+}
+#drawer-btn {
+    background-color: var(--color-1);
+}
+#comma-btn {
+    background-color: var(--color-3);
+}
+
+.cashRegister__inside {
+    background-color: var(--color-6);
+    border: 6px solid var(--color-5);
+    border-bottom: none;
+    border-top: none;
+    height: 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+    transition: height .5s ease;
+}
+.cashRegister__inside .change {
+    border: 1px solid var(--color-5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.amuleto {
+    border: 1px solid var(--color-5);
+    border-right: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.change:nth-child(5) {
+    border-right: none;
+}
+.change h3 {
+    font-size: .8rem;
+}
+
+.cashRegister__bottom {
+    background-color: var(--color-3);
+    border: 6px solid var(--color-5);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.cashRegisterBtn {
+    width: calc(var(--width)/10);
+    height: calc(var(--width)/10);
+    border-radius: 50%;
+    background-color: var(--color-1);
+    border: 6px solid var(--color-5);
+}
+.cashRegisterBtn:hover {
+    transform: scale(1.1);
+}
