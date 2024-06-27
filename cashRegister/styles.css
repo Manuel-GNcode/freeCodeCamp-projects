@@ -15,12 +15,17 @@
 body {
     background-color: #60a598;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
 }
 .cashRegister {
     width: var(--width);
-    margin: 150px auto 0;
     text-align: center;
-    position: relative;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .cashRegister__price {
@@ -74,7 +79,7 @@ body {
     outline: none;
     font-size: 1.5rem;
     width: 150px;
-    padding: 2px;
+    padding: 2px 6px;
 }
 
 .cashRegister__middle {
@@ -92,9 +97,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
     width: 80%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .btns span {
     background-color: var(--color-6);
@@ -120,53 +125,17 @@ body {
     height: 30px;
     font-weight: bold;
 }
+.actionsBtns button:hover, .btns span:hover {
+    transform: scale(1.1);
+}
 #purchase-btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    height: auto;
     background-color: var(--color-4);
 }
-#drawer-btn {
+#reset-btn {
     background-color: var(--color-1);
 }
 #comma-btn {
     background-color: var(--color-3);
-}
-
-.cashRegister__inside {
-    background-color: var(--color-6);
-    border: 6px solid var(--color-5);
-    border-bottom: none;
-    border-top: none;
-    height: 0;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    overflow: hidden;
-    transition: height .5s ease;
-}
-.cashRegister__inside .change {
-    border: 1px solid var(--color-5);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.amuleto {
-    border: 1px solid var(--color-5);
-    border-right: none;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.change:nth-child(5) {
-    border-right: none;
-}
-.change h3 {
-    font-size: .8rem;
 }
 
 .cashRegister__bottom {
@@ -184,7 +153,4 @@ body {
     border-radius: 50%;
     background-color: var(--color-1);
     border: 6px solid var(--color-5);
-}
-.cashRegisterBtn:hover {
-    transform: scale(1.1);
 }

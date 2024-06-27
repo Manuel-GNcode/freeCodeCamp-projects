@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Laura",
+        "products": "3",
+        "toPay": 25,
+        "cash": 50
+    },
+    {
+        "name": "Manuel",
+        "products": "5",
+        "toPay": 15,
+        "cash": 20
+    }
+]
